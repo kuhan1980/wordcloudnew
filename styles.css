@@ -1,0 +1,256 @@
+a {
+    color: #157fcc;
+    text-decoration: none;
+}
+
+#logo-container {
+	height: 200px;
+	width: 670px;
+	margin: 0 auto;
+	background-image: url(../images/voyant-see.png);
+	background-repeat: no-repeat;
+}
+
+#voyantheader .x-panel-header-default {
+	background-color: #ffffff;
+}
+
+#voyantheader .x-panel-header-default-collapsed {
+	background-color: #157fcc;
+}
+
+#voyantheader .x-panel-header-default-collapsed .x-panel-header-title-default {
+	color: #ffffff;
+}
+
+.x-title-text .subtitle {
+    font-style: italic;
+    font-size: smaller;
+}
+.voyant-footer {
+    text-align: center;
+    font-size: 10px;
+    color: #666;
+    background-color: #f5f5f5;
+}
+
+@font-face {
+  font-family : 'FontAwesome';
+  src         : url('../fontawesome/current/fonts/fontawesome-webfont.eot?32940503');
+  src         : url('../fontawesome/current/font-awesome-4.0.3/fonts/fontawesome-webfont.eot?32940503#iefix') 
+        format('embedded-opentype'), url('../fontawesome/current/fonts/fontawesome-webfont.woff?32940503') 
+        format('woff'), url('../fontawesome/current/fonts/fontawesome-webfont.ttf?32940503') format('truetype'), 
+        url('../fontawesome/current/fonts/fontawesome-webfont.svg?32940503#FontAwesome') format('svg');
+  font-weight : normal;
+  font-style  : normal;
+}
+
+.info-tip {
+    border-bottom: thin dotted #aaf;
+}
+
+.x-legend-container {
+    border: none;
+}
+
+.x-legend-item {
+    border-left: none;
+    padding: .2em .5em .2em 1.8em;
+}
+
+.x-legend-item-marker {
+    top: .35em;
+}
+
+.error {
+	color: red;
+}
+
+.placeholder {
+	color: grey;
+	font-style: italic;
+}
+
+
+/*************************
+ * Panel specific styles *
+ *************************/
+
+/* Summary */
+.corpus-summary .section {
+    margin-top: 1em;
+}
+.corpus-summary .header .x-autocontainer-innerCt {
+    font-weight: bold; padding-right: 1em;
+}
+
+.corpus-summary ul, .corpus-summary ol {
+    margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0;
+}
+
+/*
+.corpus-summary .x-autocontainer-innerCt {
+	padding: 10px;
+}
+
+.corpus-summary .x-autocontainer-innerCt > ul > li {
+	margin: 0 0 10px 10px;
+}
+
+.corpus-summary ul, .corpus-summary ol {
+	margin: 0 0 0 5px;
+    padding: 0;
+}
+
+.corpus-summary ul li, .corpus-summary ol li {
+	padding: 0;
+    margin: 0 0 0 10px;
+}
+*/
+
+/* Reader */
+
+.voyant-reader .x-panel-body .keyword, .keyword {
+	background-color: yellow;
+}
+
+/* Cirrus */
+
+svg#cirrusGraph text {
+    cursor: pointer;
+}
+
+/* Collocates Graph */
+svg#collocatesGraph text {
+    text-anchor: middle;
+}
+
+svg#collocatesGraph text.keyword {
+    text-anchor: middle;
+    cursor: pointer;
+}
+
+svg#collocatesGraph text.context {
+    text-anchor: middle;
+    cursor: pointer;
+}
+
+svg#collocatesGraph line {
+  stroke: #eee;
+  stroke-width: 1px;
+}
+
+/* Bubblelines */
+
+.term.over {
+	cursor: pointer;
+}
+
+.term.unselected {
+	color: grey !important;
+}
+
+/* StreamGraph */
+
+.axis path, .axis line {
+	fill: none;
+	stroke: black;
+    shape-rendering: crispEdges;
+}
+
+
+
+/* used for panel tool glyphs in the header */
+.x-tool-glyph {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: normal;
+     color: #157fcc;
+     opacity: .75;
+    margin-right: 2px;
+}
+.x-tool-glyph:last-child {
+    margin-right: 5px;
+}
+
+    .x-tool-glyph:hover {
+        opacity: 1;
+    }
+#voyantheader .x-tool-glyph {
+	color: white;
+}
+
+
+.x-splitter {
+	background-color: rgb(245, 245, 245);
+}
+
+
+    .fa-trigger {
+    	background-image: none !important;
+    	font-family: FontAwesome;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 16px !important;
+        text-align: center;
+    	padding-top: 12px;
+    	color: #aaa;
+    }
+    .form-fa-search-trigger:after {
+    	content: "\f002";
+    }
+    .form-fa-clear-trigger:after {
+    	content: "\f00d";
+    }
+    .form-fa-help-trigger:after {
+    	content: "\f128";
+    }
+    .x-form-trigger.fa {
+    	display:table-cell;
+    	background-image:none !important;
+    	padding-top:5px;
+    }
+    .green {color:green;}
+    
+ 
+     @font-face {
+	    font-family: 'CC-ICONS';
+	    src: url('cc-icons.ttf') format('truetype');
+    }
+    span.cc {
+	    font-family: 'CC-ICONS';
+    }
+ 
+ /* loading animation */
+#pageloading {position:absolute;top:50%;width:100%;margin-top:-70px}
+#pageloading .title{font-family:"Exo",sans-serif;font-size:2em;color:gray;text-align:center;white-space:nowrap;display:block}
+#pageloading .logo{background:url(rotating-owl.gif) no-repeat center;display:block;height:121px}
+ 
+ 
+.mask-no-spinner .x-mask-msg-text {
+    background: transparent !important;
+    padding: 5px !important
+}
+
+.dropzone {
+    border: thin dotted #999;
+    padding: 5px;
+    margin: 5px;
+    min-height: 16px;
+}
+
+.dropzone-enabled {
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+.dropzone-disabled {
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+.dragsource {
+    border: thin solid #999;
+    background-color: rgb(245, 245, 245);
+    padding: 2px;
+    margin: 2px;
+    cursor: move;
+}
